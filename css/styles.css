@@ -1,0 +1,246 @@
+:root {
+  /* Colors */
+  --primaryBrandColor: #4d5ae5;
+  --textColor: #434455;
+  --darkColor: #2e2f42;
+  --pressedStateColor: #404bbf;
+  --accentColor: #e7e9fc;
+  --lightBackgroundColor: #f4f4fd;
+  --bodyColor: #fff; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em; /* 24/16 */
+  letter-spacing: 0.02em;
+  color: var(--textColor);
+  background-color: var(--bodyColor);
+}
+
+/* Generic styles */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11em; /* 40/36 */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--darkColor);
+}
+
+.subheader {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: var(--darkColor);
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--textColor);
+}
+
+/* Logo */
+a.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primaryBrandColor);
+  line-height: 1.17em; /* 21/18 */
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-studio {
+  color: var(--darkColor);
+}
+
+.logo-studio-dark {
+  color: var(--lightBackgroundColor);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Contacts */
+.address {
+  font-style: normal;
+}
+
+.contacts {
+  text-indent: 0;
+  padding: 0 0 0 0;
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.contact:hover,
+.contact:focus {
+  text-decoration: none;
+  color: var(--pressedStateColor);
+}
+
+/* Menu */
+.menu {
+  padding: 0;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--darkColor);
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--pressedStateColor);
+}
+
+/* Section 1 - Hero */
+
+.hero {
+  background-color: var(--darkColor);
+}
+
+.hero-header {
+  font-size: 56px;
+  color: var(--bodyColor);
+  line-height: 1.07em; /* 60/56 */
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Button - Main page */
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: var(--bodyColor);
+  font-weight: 500;
+  background-color: var(--primaryBrandColor);
+  padding: 16px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--bodyColor);
+  background-color: var(--pressedStateColor);
+}
+
+/* Section 2 - Features */
+.features {
+  padding: 0;
+}
+
+.features-header {
+  visibility: hidden;
+  letter-spacing: 0.02em;
+  color: var(--darkColor);
+}
+
+.feature {
+  font-size: 16px;
+}
+
+/* Section 3 - Portfolio */
+.main-portfolio-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11em; /* 40/36 */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--darkColor);
+}
+
+/* Section 4 - Team */
+.team {
+  background-color: var(--lightBackgroundColor);
+}
+
+.team-header {
+  line-height: 1.11em;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--darkColor);
+}
+
+.team-item {
+  background-color: var(--bodyColor)
+}
+
+.team-item h3,
+.team-item p {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--darkColor);
+}
+
+.footer p {
+  color: var(--lightBackgroundColor);
+}
+
+/*****************************/
+/* Portfolio page — Filters */
+.filter-button {
+  background-color: var(--lightBackgroundColor);
+  border: 1px solid var(--accentColor);
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: var(--primaryBrandColor);
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--pressedStateColor);
+  color: var(--bodyColor);
+}
+
+/* Portfolio */
+.portfolio-item h3,
+.portfolio-item p {
+  text-align: left;
+}
