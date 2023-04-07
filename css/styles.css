@@ -9,6 +9,10 @@
   --bodyColor: #fff;
 }
 
+html {
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -17,6 +21,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--textColor);
   background-color: var(--bodyColor);
+}
+
+img {
+  display: block;
 }
 
 /* Generic styles */
@@ -61,6 +69,22 @@ nav ul {
   display: inline-block;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  padding: 0 15px;
+}
+
+/* Header */
+.main-header {
+  display: inline-block;
+  border-bottom: 1px solid var(--accentColor);
+}
+
 /* Logo */
 a.logo {
   font-family: 'Raleway', sans-serif;
@@ -87,9 +111,6 @@ a.logo {
 }
 
 /* Contacts */
-header * {
-  display: inline-block;
-}
 
 .address {
   font-style: normal;
@@ -152,6 +173,7 @@ header * {
   letter-spacing: 0.02em;
   width: 496px;
   margin: 0 auto;
+  padding: 48px 0;
 }
 
 /* Button - Main page */
@@ -171,6 +193,10 @@ header * {
   cursor: pointer;
   margin: 0 auto;
   min-width: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .button:hover,
@@ -180,20 +206,18 @@ header * {
 }
 
 /* Section 2 - Features */
-.features-header {
-  visibility: hidden;
-  letter-spacing: 0.02em;
-  color: var(--darkColor);
-}
-
 .features {
   padding: 0;
 }
 
 .features-item {
   width: 264px;
-  margin: 0 24px 0 0;
+  margin-right: 24px;
   display: inline-block;
+}
+
+.features-item:last-child {
+  margin-right: 0;
 }
 
 /* Section 3 - Portfolio */
@@ -233,6 +257,7 @@ header * {
 /* Footer */
 .footer {
   background-color: var(--darkColor);
+  height: 312px;
 }
 
 .footer p {
