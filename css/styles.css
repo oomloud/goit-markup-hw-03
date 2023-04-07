@@ -6,7 +6,7 @@
   --pressedStateColor: #404bbf;
   --accentColor: #e7e9fc;
   --lightBackgroundColor: #f4f4fd;
-  --bodyColor: #fff; 
+  --bodyColor: #fff;
 }
 
 body {
@@ -56,6 +56,11 @@ body {
   color: var(--textColor);
 }
 
+nav a,
+nav ul {
+  display: inline-block;
+}
+
 /* Logo */
 a.logo {
   font-family: 'Raleway', sans-serif;
@@ -66,6 +71,7 @@ a.logo {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin: 0 76px 0 0;
 }
 
 .logo-studio {
@@ -81,18 +87,23 @@ a.logo {
 }
 
 /* Contacts */
+header * {
+  display: inline-block;
+}
+
 .address {
   font-style: normal;
 }
 
 .contacts {
   text-indent: 0;
-  padding: 0 0 0 0;
 }
 
 .contact {
   text-decoration: none;
   color: var(--textColor);
+  display: inline-block;
+  margin: 0 40px 0 0;
 }
 
 .contact:hover,
@@ -104,6 +115,11 @@ a.logo {
 /* Menu */
 .menu {
   padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 40px 0 0;
 }
 
 .menu-item {
@@ -124,6 +140,8 @@ a.logo {
 
 .hero {
   background-color: var(--darkColor);
+  height: 600px;
+  width: 100%;
 }
 
 .hero-header {
@@ -132,6 +150,8 @@ a.logo {
   line-height: 1.07em; /* 60/56 */
   text-align: center;
   letter-spacing: 0.02em;
+  width: 496px;
+  margin: 0 auto;
 }
 
 /* Button - Main page */
@@ -142,12 +162,15 @@ a.logo {
   letter-spacing: 0.04em;
   color: var(--bodyColor);
   font-weight: 500;
+
   background-color: var(--primaryBrandColor);
   padding: 16px 32px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin: 0 auto;
+  min-width: auto;
 }
 
 .button:hover,
@@ -157,18 +180,20 @@ a.logo {
 }
 
 /* Section 2 - Features */
-.features {
-  padding: 0;
-}
-
 .features-header {
   visibility: hidden;
   letter-spacing: 0.02em;
   color: var(--darkColor);
 }
 
-.feature {
-  font-size: 16px;
+.features {
+  padding: 0;
+}
+
+.features-item {
+  width: 264px;
+  margin: 0 24px 0 0;
+  display: inline-block;
 }
 
 /* Section 3 - Portfolio */
@@ -197,7 +222,7 @@ a.logo {
 }
 
 .team-item {
-  background-color: var(--bodyColor)
+  background-color: var(--bodyColor);
 }
 
 .team-item h3,
