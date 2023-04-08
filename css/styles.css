@@ -65,20 +65,29 @@ img {
   color: var(--textColor);
 }
 
+.section {
+  padding: 120px 0 0 0;
+}
+
+.section-dp {
+  padding: 120px 0;
+}
+
+.section-accent {
+  background-color: var(--lightBackgroundColor);
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
 
-.section {
-  padding: 0;
-}
-
 /* Header */
 .main-header {
   border-bottom: 1px solid var(--accentColor);
   display: flex;
+  padding-top: 0;
 }
 
 .navigation-header {
@@ -109,6 +118,8 @@ a.logo {
 
 .hidden {
   visibility: hidden;
+  height: 0;
+  margin: 0;
 }
 
 /* Menu */
@@ -122,6 +133,7 @@ a.logo {
   text-decoration: none;
   font-weight: 500;
   color: var(--darkColor);
+  padding: 24px 0;
 }
 
 .menu-item:hover,
@@ -162,8 +174,8 @@ a.logo {
 
 .hero {
   background-color: var(--darkColor);
-  height: 600px;
   width: 100%;
+  padding: 188px 0;
 }
 
 .hero-header {
@@ -193,11 +205,10 @@ a.logo {
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
-  min-width: auto;
+  min-width: 169px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  display: block;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -209,12 +220,13 @@ a.logo {
 /* Section 2 - Features */
 .features {
   padding: 0;
+  display: flex;
+  gap: 24px;
+  margin: 0;
 }
 
 .features-item {
   width: 264px;
-  margin-right: 24px;
-  display: inline-block;
 }
 
 .features-item:last-child {
@@ -222,9 +234,10 @@ a.logo {
 }
 
 /* Section 3 - Services */
-.services li {
-  display: inline-block;
-  margin-right: 24px;
+.services {
+  display: flex;
+  gap: 24px;
+  margin: 0;
 }
 
 .services li:last-child {
@@ -232,8 +245,9 @@ a.logo {
 }
 /* Section 4 - Team */
 .team {
-  background-color: var(--lightBackgroundColor);
-  padding: 120px 0;
+  display: flex;
+  gap: 24px;
+  margin: 0;
 }
 
 .team-header {
@@ -246,13 +260,11 @@ a.logo {
 
 .team-item {
   background-color: var(--bodyColor);
-  display: inline-block;
   width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   padding: 0 0 32px;
-  margin-right: 24px;
 }
 
 .team-item h3 {
