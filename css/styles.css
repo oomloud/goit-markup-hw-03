@@ -31,6 +31,7 @@ img {
 
 .list {
   list-style: none;
+  padding: 0;
 }
 
 .link {
@@ -72,17 +73,17 @@ nav ul {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px 0 15px;
 }
 
 .section {
-  padding: 0 15px;
+  padding: 0;
 }
 
 /* Header */
 .main-header {
-  display: inline-block;
   border-bottom: 1px solid var(--accentColor);
+  display: flex;
 }
 
 /* Logo */
@@ -118,6 +119,10 @@ a.logo {
 
 .contacts {
   text-indent: 0;
+}
+
+.contacts li {
+  display: inline-block;
 }
 
 .contact {
@@ -220,21 +225,19 @@ a.logo {
   margin-right: 0;
 }
 
-/* Section 3 - Portfolio */
-.main-portfolio-header {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11em; /* 40/36 */
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--darkColor);
+/* Section 3 - Services */
+.services li {
+  display: inline-block;
+  margin-right: 24px;
 }
 
+.services li:last-child {
+  margin-right: 0px;
+}
 /* Section 4 - Team */
 .team {
   background-color: var(--lightBackgroundColor);
+  padding: 120px 0;
 }
 
 .team-header {
@@ -247,21 +250,37 @@ a.logo {
 
 .team-item {
   background-color: var(--bodyColor);
+  display: inline-block;
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding: 0 0 32px;
+  margin-right: 24px;
 }
 
-.team-item h3,
+.team-item h3 {
+  text-align: center;
+}
+
 .team-item p {
+  margin-bottom: 0;
   text-align: center;
 }
 
 /* Footer */
 .footer {
   background-color: var(--darkColor);
-  height: 312px;
+  padding: 100px 0 100px 0;
+}
+
+.footer a {
+  display: inline-block;
 }
 
 .footer p {
   color: var(--lightBackgroundColor);
+  max-width: 264px;
 }
 
 /*****************************/

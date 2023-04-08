@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="main-header section">
+  <header class="main-header section">
+    <div class="container main-header">
       <nav>
         <!-- Logo -->
         <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span></a>
@@ -30,23 +30,27 @@
       <!-- Contacts -->
       <address class="address">
         <ul class="list contacts">
-          <li class="contact"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-          <li class="contact"><a href="tel:+110001111111" class="link contact">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111" class="link contact">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- Section 1 - Hero -->
-      <section class="section hero">
-        <div>
-          <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
-        </div>
-      </section>
 
-      <!-- Section 2 - Description -->
-      <section class="section">
+  <main>
+    <!-- Section 1 - Hero -->
+    <section class="section hero">
+      <div class="container">
+        <h1 class="hero-header">Effective Solutions for Your Business</h1>
+        <button type="button" class="button">Order Service</button>
+      </div>
+
+    </section>
+
+    <!-- Section 2 - Description -->
+    <section class="section">
+      <div class="container">
         <h2 class="section-header hidden">Features</h2>
         <ul class="list features">
           <li class="features-item">
@@ -74,20 +78,24 @@
             </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <!-- Section 3 - Portfolio -->
-      <section class="section">
+    <!-- Section 3 - Portfolio -->
+    <section class="section">
+      <div class="container">
         <h2 class="section-header">What are we doing</h2>
-        <ul class="list">
+        <ul class="list services">
           <li><img src="./images/img_1.jpg" alt="Website displayed on Apple monitor" width="360"></li>
           <li><img src="./images/img_2.jpg" alt="Mobile app design showcase" width="360"></li>
           <li><img src="./images/img_3.jpg" alt="Hand with smartphone" width="360"></li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <!-- Section 4 - Our Team -->
-      <section class="team">
+    <!-- Section 4 - Our Team -->
+    <section class="section team">
+      <div class="container">
         <h2 class="section-header">Our Team</h2>
         <ul class="list">
           <li class="team-item">
@@ -111,17 +119,20 @@
             <p class="paragraph">UI Designer</p>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer section">
+  <footer class="footer section">
+    <div class="container">
       <a href="./index.html" class="logo link">Web<span class="logo-studio-dark">Studio</span></a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
-    </footer>
-  </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
