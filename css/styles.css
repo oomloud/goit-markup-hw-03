@@ -56,6 +56,7 @@ img {
   line-height: 1.2em;
   letter-spacing: 0.02em;
   color: var(--darkColor);
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -66,7 +67,7 @@ img {
 }
 
 .section {
-  padding: 120px 0 0 0;
+  padding: 0 0 120px 0;
 }
 
 .section-dp {
@@ -84,10 +85,14 @@ img {
 }
 
 /* Header */
-.main-header {
+header {
   border-bottom: 1px solid var(--accentColor);
+}
+
+.main-header {
   display: flex;
   padding-top: 0;
+  align-items: center;
 }
 
 .navigation-header {
@@ -182,7 +187,7 @@ a.logo {
   line-height: 1.07em; /* 60/56 */
   text-align: center;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   padding: 48px 0;
 }
@@ -238,9 +243,14 @@ a.logo {
   margin: 0;
 }
 
-.services li:last-child {
-  margin-right: 0px;
+.services-header {
+  margin-bottom: 72px;
 }
+
+.services-item {
+  width: calc(100%-3 * 16px);
+}
+
 /* Section 4 - Team */
 .team {
   display: flex;
@@ -249,11 +259,7 @@ a.logo {
 }
 
 .team-header {
-  line-height: 1.11em;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--darkColor);
+  margin-bottom: 72px;
 }
 
 .team-item {
@@ -262,16 +268,21 @@ a.logo {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  padding: 0 0 32px;
+  padding: 0;
 }
 
-.team-item h3 {
+.team-item-text {
   text-align: center;
+  padding: 32px 16px;
+  border-radius: 0 0 4px 4px;
 }
 
-.team-item p {
+.team-item-text > .subheader {
+  margin-top: 0;
+}
+
+.team-item-text > .paragraph {
   margin-bottom: 0;
-  text-align: center;
 }
 
 /* Footer */
@@ -320,6 +331,7 @@ a.logo {
 .filter-button:focus {
   background-color: var(--pressedStateColor);
   color: var(--bodyColor);
+  border: 1px solid transparent;
 }
 
 /* Portfolio */
@@ -335,18 +347,17 @@ a.logo {
 .portfolio-item {
   background-color: var(--bodyColor);
   width: 360px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
   text-align: left;
 }
 
 .portfolio-item-text {
   padding: 32px 16px;
+  border: 1px solid var(--accentColor);
+  border-top: none;
 }
 
 .portfolio-item-text > .subheader {
-  margin-top: 0;
+  margin: 0 0 8px 0;
 }
 
 .portfolio-item-text > .paragraph {
