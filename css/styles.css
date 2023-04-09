@@ -336,6 +336,10 @@ a.logo {
 
 /* Portfolio */
 
+.section-portfolio {
+  margin: 96px 0 120px 0;
+}
+
 .portfolio {
   display: flex;
   gap: 24px;
