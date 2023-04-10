@@ -101,9 +101,9 @@ p {
 
 .header-container {
   display: flex;
-  padding-top: 0;
   align-items: center;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navigation-header {
