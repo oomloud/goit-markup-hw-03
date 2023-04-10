@@ -97,13 +97,12 @@ p {
 /* Header */
 .main-header {
   border-bottom: 1px solid var(--accentColor);
+  padding: 24px 0;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .navigation-header {
