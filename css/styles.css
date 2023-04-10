@@ -95,11 +95,11 @@ p {
 }
 
 /* Header */
-header {
+.main-header {
   border-bottom: 1px solid var(--accentColor);
 }
 
-.main-header {
+.header-container {
   display: flex;
   padding-top: 0;
   align-items: center;
