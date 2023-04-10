@@ -27,6 +27,16 @@ img {
   display: block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 /* Generic styles */
 
 .list {
@@ -93,6 +103,7 @@ header {
   display: flex;
   padding-top: 0;
   align-items: center;
+  padding: 24px 0;
 }
 
 .navigation-header {
@@ -132,6 +143,7 @@ a.logo {
   padding: 0;
   display: flex;
   gap: 40px;
+  margin: 0;
 }
 
 .menu-item {
@@ -160,6 +172,7 @@ a.logo {
   text-indent: 0;
   display: flex;
   gap: 40px;
+  margin: 0;
 }
 
 .contact {
@@ -188,8 +201,8 @@ a.logo {
   text-align: center;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: 0 auto;
-  padding: 48px 0;
+  margin: 48px auto;
+  padding: 0;
 }
 
 /* Button - Main page */
