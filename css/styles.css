@@ -47,6 +47,7 @@ p {
 .link {
   text-decoration: none;
   cursor: pointer;
+  display: block;
 }
 
 .section-header {
@@ -97,7 +98,6 @@ p {
 /* Header */
 .main-header {
   border-bottom: 1px solid var(--accentColor);
-  padding: 24px 0;
 }
 
 .header-container {
@@ -200,7 +200,7 @@ a.logo {
   text-align: center;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: 48px auto;
+  margin: 0 auto 48px;
   padding: 0;
 }
 
